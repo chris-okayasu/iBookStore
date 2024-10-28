@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct iBookStoreApp: App {
@@ -13,5 +14,9 @@ struct iBookStoreApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Book.self)
+    }
+    init () {
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
     }
 }
