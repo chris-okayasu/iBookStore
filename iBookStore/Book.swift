@@ -61,9 +61,9 @@ enum Status: Int, Codable, Identifiable, CaseIterable {
     }
     var desc: String {
         switch self {
-            case .onShelf: return "On Shelf"
-            case .inProgress: return "In Progress"
-            case .completed: return "Completed"
+        case .onShelf: return "On Shelf"
+        case .inProgress: return "In Progress"
+        case .completed: return "Completed"
         }
     }
 }
