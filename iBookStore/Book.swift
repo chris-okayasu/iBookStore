@@ -18,7 +18,7 @@ class Book {
     var dateComplete: Date
     var sumary: String
     var rating: Int?
-    var status: Status // manage by enum Status
+    var status: Status.RawValue // manage by enum Status
     
     init(
         title: String,
@@ -37,10 +37,10 @@ class Book {
         self.dateComplete = dateComplete
         self.sumary = sumary
         self.rating = rating
-        self.status = status
+        self.status = status.rawValue
     }
     var icon: Image {
-        switch status {
+        switch Status(rawValue: status)! {
         case .onShelf: Image(
             systemName: "checkmark.diamond.fill"
         )
