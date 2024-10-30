@@ -19,6 +19,8 @@ struct EditBookView: View {
     @State private var dateStarted = Date.distantPast
     @State private var dateCompleted = Date.distantPast
     @State private var firstView = true
+    @State private var recommendedBy = ""
+    
     var body: some View {
         HStack {
             Text("Status")
@@ -92,8 +94,14 @@ struct EditBookView: View {
                 Text("Author")
                     .foregroundStyle(.secondary)
             }
+            LabeledContent {
+                TextField("", text: $recommendedBy)
+            } label: {
+                Text("Recommended By")
+                    .foregroundStyle(.secondary)
+            }
             Divider()
-            Text("Summary")
+            Text("Synopsis")
                 .foregroundStyle(.secondary)
             TextEditor(text: $synopsis)
                 .padding(5)
@@ -114,6 +122,7 @@ struct EditBookView: View {
                     book.dateAdded = dateAdded
                     book.dateStarted = dateStarted
                     book.dateComplete = dateCompleted
+                    book.recommendedBy = recommendedBy
                     dismiss()
                 }
                 .buttonStyle(.borderedProminent)
@@ -128,6 +137,7 @@ struct EditBookView: View {
             dateAdded = book.dateAdded
             dateStarted = book.dateStarted
             dateCompleted = book.dateComplete
+            recommendedBy = book.recommendedBy
         }
     }
     var changed: Bool {
@@ -139,6 +149,7 @@ struct EditBookView: View {
             || dateAdded != book.dateAdded
             || dateStarted != book.dateStarted
             || dateCompleted != book.dateComplete
+            || recommendedBy != book.recommendedBy
     }
 }
 
