@@ -22,6 +22,9 @@ class Book { // Class is used when the app starts, that is why it crushed when n
     var status: Status.RawValue // manage by enum Status
     var recommendedBy: String = "" // set an empty string since the db already has some books
     
+    // one to many relationship, this book has many quotes
+    var quotes: [Quote]?
+    
     init( // the init is used when new book is created NOT when the app is started (recommendedBy issue and migrations)
         title: String,
         author: String,

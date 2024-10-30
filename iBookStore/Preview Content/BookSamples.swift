@@ -38,6 +38,7 @@ extension Book {
                 synopsis: "The life of a Japanese idol takes an unexpected turn when it is revealed that she is pregnant. The story follows her children, who have mysterious memories of their past lives.",
                 status: Status.inProgress,
                 recommendedBy: "Japanese Restaurants"
+
             ),
             Book(
                 title: "Attack on Titan",
