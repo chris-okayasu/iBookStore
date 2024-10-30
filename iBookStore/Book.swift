@@ -10,7 +10,7 @@ import SwiftData
 import SwiftUI
 
 @Model
-class Book {
+class Book { // Class is used when the app starts, that is why it crushed when new property was added (recommended by)
     var title: String
     var author: String
     var dateAdded: Date
@@ -19,8 +19,9 @@ class Book {
     var sumary: String
     var rating: Int?
     var status: Status.RawValue // manage by enum Status
+    var recommendedBy: String = "" // set an empty string since the db already has some books
     
-    init(
+    init( // the init is used when new book is created NOT when the app is started (recommendedBy issue and migrations)
         title: String,
         author: String,
         dateAdded: Date = Date.now,
@@ -28,7 +29,8 @@ class Book {
         dateComplete: Date = Date.distantPast,
         sumary: String = "",
         rating: Int? = nil,
-        status: Status = .onShelf
+        status: Status = .onShelf,
+        recommendedBy: String = "---"
     ) {
         self.title = title
         self.author = author
@@ -38,6 +40,7 @@ class Book {
         self.sumary = sumary
         self.rating = rating
         self.status = status.rawValue
+        self.recommendedBy = recommendedBy
     }
     var icon: Image {
         switch Status(rawValue: status)! {
