@@ -14,7 +14,7 @@ struct EditBookView: View {
     @State private var rating: Int?
     @State private var title = ""
     @State private var author = ""
-    @State private var summary = ""
+    @State private var synopsis = ""
     @State private var dateAdded = Date.distantPast
     @State private var dateStarted = Date.distantPast
     @State private var dateCompleted = Date.distantPast
@@ -95,7 +95,7 @@ struct EditBookView: View {
             Divider()
             Text("Summary")
                 .foregroundStyle(.secondary)
-            TextEditor(text: $summary)
+            TextEditor(text: $synopsis)
                 .padding(5)
                 .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color(uiColor: .tertiarySystemFill), lineWidth: 2))
         }
@@ -110,7 +110,7 @@ struct EditBookView: View {
                     book.rating = rating
                     book.title = title
                     book.author = author
-                    book.sumary = summary
+                    book.synopsis = synopsis
                     book.dateAdded = dateAdded
                     book.dateStarted = dateStarted
                     book.dateComplete = dateCompleted
@@ -124,7 +124,7 @@ struct EditBookView: View {
             rating = book.rating
             title = book.title
             author = book.author
-            summary = book.sumary
+            synopsis = book.synopsis
             dateAdded = book.dateAdded
             dateStarted = book.dateStarted
             dateCompleted = book.dateComplete
@@ -135,7 +135,7 @@ struct EditBookView: View {
             || rating != book.rating
             || title != book.title
             || author != book.author
-            || summary != book.sumary
+            || synopsis != book.synopsis
             || dateAdded != book.dateAdded
             || dateStarted != book.dateStarted
             || dateCompleted != book.dateComplete

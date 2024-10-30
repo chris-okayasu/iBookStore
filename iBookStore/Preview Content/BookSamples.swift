@@ -25,7 +25,7 @@ extension Book {
                 author: "Kanehito Yamada",
                 dateAdded: lastMonth,
                 dateStarted: lastWeek,
-                sumary: "The story follows Frieren, an elf who went on an epic adventure with a hero to save the world. After the death of her human friends, Frieren embarks on a new journey to better understand human life and emotions.",
+                synopsis: "The story follows Frieren, an elf who went on an epic adventure with a hero to save the world. After the death of her human friends, Frieren embarks on a new journey to better understand human life and emotions.",
                 rating: 5,
                 status: Status.completed
             ),
@@ -34,7 +34,7 @@ extension Book {
                 author: "Aka Akasaka",
                 dateAdded: lastWeek,
                 dateStarted: Date.now,
-                sumary: "The life of a Japanese idol takes an unexpected turn when it is revealed that she is pregnant. The story follows her children, who have mysterious memories of their past lives.",
+                synopsis: "The life of a Japanese idol takes an unexpected turn when it is revealed that she is pregnant. The story follows her children, who have mysterious memories of their past lives.",
                 status: Status.inProgress
             ),
             Book(
@@ -42,7 +42,7 @@ extension Book {
                 author: "Hajime Isayama",
                 dateAdded: lastMonth,
                 dateStarted: lastWeek,
-                sumary: "In a post-apocalyptic world where humanity lives in cities surrounded by enormous walls to protect themselves from the titans, giant creatures that devour humans, a young man named Eren Yeager embarks on a mission to avenge his mother and save humanity.",
+                synopsis: "In a post-apocalyptic world where humanity lives in cities surrounded by enormous walls to protect themselves from the titans, giant creatures that devour humans, a young man named Eren Yeager embarks on a mission to avenge his mother and save humanity.",
                 rating: 5,
                 status: Status.completed
             ),
@@ -51,7 +51,7 @@ extension Book {
                 author: "Akira Toriyama",
                 dateAdded: lastWeek,
                 dateStarted: Date.now,
-                sumary: "The story continues after the events of Dragon Ball Z, where Goku and his friends face new cosmic threats and powerful characters as they search for the dragon balls and protect the universe.",
+                synopsis: "The story continues after the events of Dragon Ball Z, where Goku and his friends face new cosmic threats and powerful characters as they search for the dragon balls and protect the universe.",
                 status: Status.onShelf
             )
         ]

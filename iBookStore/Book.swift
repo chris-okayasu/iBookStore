@@ -16,7 +16,8 @@ class Book { // Class is used when the app starts, that is why it crushed when n
     var dateAdded: Date
     var dateStarted: Date
     var dateComplete: Date
-    var sumary: String
+    @Attribute(originalName: "sumary") // summary name was changed to synopsis, in order to  refere to original name on db we have to add that attribute (this also will modify the column name on the table)
+    var synopsis: String
     var rating: Int?
     var status: Status.RawValue // manage by enum Status
     var recommendedBy: String = "" // set an empty string since the db already has some books
@@ -27,7 +28,7 @@ class Book { // Class is used when the app starts, that is why it crushed when n
         dateAdded: Date = Date.now,
         dateStarted: Date = Date.distantPast,
         dateComplete: Date = Date.distantPast,
-        sumary: String = "",
+        synopsis: String = "",
         rating: Int? = nil,
         status: Status = .onShelf,
         recommendedBy: String = "---"
@@ -37,7 +38,7 @@ class Book { // Class is used when the app starts, that is why it crushed when n
         self.dateAdded = dateAdded
         self.dateStarted = dateStarted
         self.dateComplete = dateComplete
-        self.sumary = sumary
+        self.synopsis = synopsis
         self.rating = rating
         self.status = status.rawValue
         self.recommendedBy = recommendedBy
