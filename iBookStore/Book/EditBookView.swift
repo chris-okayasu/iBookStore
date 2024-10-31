@@ -20,7 +20,7 @@ struct EditBookView: View {
     @State private var dateCompleted = Date.distantPast
     @State private var firstView = true
     @State private var recommendedBy = ""
-    
+    @State private var showGenres: Bool = false
     var body: some View {
         HStack {
             Text("Status")
@@ -106,7 +106,13 @@ struct EditBookView: View {
             TextEditor(text: $synopsis)
                 .padding(5)
                 .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color(uiColor: .tertiarySystemFill), lineWidth: 2))
-//            if let quotes = book.quotes?.count {
+            HStack {
+                Button("Genres", systemImage: "bookmark.fill"){
+                    showGenres.toggle()
+                }
+                .sheet(isPresented: $showGenres){
+                    GenresView(book: book)
+                }
                 NavigationLink{
                     QuotesListView(book: book)
                 } label: {
@@ -116,7 +122,7 @@ struct EditBookView: View {
                 .buttonStyle(.bordered)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding(.horizontal)
-//            }
+            }
         }
         .padding()
         .textFieldStyle(.roundedBorder)

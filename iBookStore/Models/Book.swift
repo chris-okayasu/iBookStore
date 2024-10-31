@@ -26,6 +26,10 @@ class Book { // Class is used when the app starts, that is why it crushed when n
     @Relationship(deleteRule: .cascade)
     var quotes: [Quote]?
     
+    // many to many
+    @Relationship(inverse: \Genre.books)
+    var genres: [Genre]?
+    
     init( // the init is used when new book is created NOT when the app is started (recommendedBy issue and migrations)
         title: String,
         author: String,

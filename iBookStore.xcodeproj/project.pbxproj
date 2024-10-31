@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8E3FA9912CD004CA00D017E5 /* iBookStore */ = {
+		8ECDE6652CD41A900043C36A /* iBookStore */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = iBookStore;
 			sourceTree = "<group>";
@@ -32,7 +32,7 @@
 		8E3FA9862CD004CA00D017E5 = {
 			isa = PBXGroup;
 			children = (
-				8E3FA9912CD004CA00D017E5 /* iBookStore */,
+				8ECDE6652CD41A900043C36A /* iBookStore */,
 				8E3FA9902CD004CA00D017E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8E3FA9912CD004CA00D017E5 /* iBookStore */,
+				8ECDE6652CD41A900043C36A /* iBookStore */,
 			);
 			name = iBookStore;
 			packageProductDependencies = (
