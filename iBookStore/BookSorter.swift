@@ -56,13 +56,19 @@ struct BookSorter: View {
                             }
                         }
                     }
-                    .onDelete { index in
-                        index.forEach{ i in
+                    .onDelete { indexSet in
+                        indexSet.forEach { i in
                             let book = books[i]
                             print("Deleting: \(book.title)")
                             context.delete(book)
+                            do {
+                                try context.save()
+                            } catch {
+                                print("Failed to save context after deleting: \(error)")
+                            }
                         }
                     }
+
                 }
                 .listStyle(.plain)
             }
