@@ -49,6 +49,22 @@
         }
       }
     },
+    "author" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "autor"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "著者"
+          }
+        }
+      }
+    },
     "Author" : {
       "localizations" : {
         "es" : {
@@ -93,6 +109,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "キャンセル"
+          }
+        }
+      }
+    },
+    "Completed" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completado"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
           }
         }
       }
@@ -225,6 +257,22 @@
         }
       }
     },
+    "In Progress" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En progreso"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "進行中"
+          }
+        }
+      }
+    },
     "My Manga" : {
       "localizations" : {
         "es" : {
@@ -285,6 +333,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新しいマンガ"
+          }
+        }
+      }
+    },
+    "On Shelf" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En Estantería"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "棚にある"
           }
         }
       }
@@ -374,13 +438,13 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Establecer el color del género"
+            "value" : "Configurar color"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ジャンルの色を設定"
+            "value" : "ジャンルの色を設定します。"
           }
         }
       }
@@ -390,13 +454,29 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por %@"
+            "value" : "Ordedar por %@"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ で並べ替え"
+            "value" : "並べ替え %@"
+          }
+        }
+      }
+    },
+    "status" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "estado"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ステータス"
           }
         }
       }
@@ -412,7 +492,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "状態"
+            "value" : "ステータス"
           }
         }
       }
@@ -433,12 +513,28 @@
         }
       }
     },
+    "title" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "titulo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "タイトル"
+          }
+        }
+      }
+    },
     "Title" : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Título"
+            "value" : "Titulo"
           }
         },
         "ja" : {
@@ -460,7 +556,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "更新"
+            "value" : "アップデート"
           }
         }
       }
@@ -470,13 +566,13 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Primero necesitas crear algunos géneros."
+            "value" : "Debes crear algunos géneros primero"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "最初にジャンルを作成する必要があります。"
+            "value" : "最初にいくつかのジャンルを作成する必要があります。"
           }
         }
       }

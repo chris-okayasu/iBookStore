@@ -71,7 +71,8 @@ enum Status: Int, Codable, Identifiable, CaseIterable {
     var id: Self {
         self
     }
-    var desc: String {
+    // same but now it can generate translations note: ⌘ + B after replace string to LocalizedStringResource
+    var desc: LocalizedStringResource {
         switch self {
         case .onShelf: return "On Shelf"
         case .inProgress: return "In Progress"
