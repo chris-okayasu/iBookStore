@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8ECDE6802CD5447D0043C36A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8ECDE67F2CD5447D0043C36A /* Localizable.xcstrings */; };
+		8ECDE6872CD55A370043C36A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECDE6862CD55A370043C36A /* Launch Screen.storyboard */; };
+		8ECDE6892CD55D660043C36A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8ECDE6882CD55D660043C36A /* InfoPlist.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E3FA98F2CD004CA00D017E5 /* iBookStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBookStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECDE67F2CD5447D0043C36A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8ECDE6862CD55A370043C36A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8ECDE6882CD55D660043C36A /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,6 +41,8 @@
 		8E3FA9862CD004CA00D017E5 = {
 			isa = PBXGroup;
 			children = (
+				8ECDE6882CD55D660043C36A /* InfoPlist.xcstrings */,
+				8ECDE6862CD55A370043C36A /* Launch Screen.storyboard */,
 				8ECDE67F2CD5447D0043C36A /* Localizable.xcstrings */,
 				8ECDE6652CD41A900043C36A /* iBookStore */,
 				8E3FA9902CD004CA00D017E5 /* Products */,
@@ -117,6 +123,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECDE6892CD55D660043C36A /* InfoPlist.xcstrings in Resources */,
+				8ECDE6872CD55A370043C36A /* Launch Screen.storyboard in Resources */,
 				8ECDE6802CD5447D0043C36A /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +268,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iBookStore/Preview Content\"";
@@ -289,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iBookStore/Preview Content\"";
