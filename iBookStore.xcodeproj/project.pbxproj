@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8ECDE6802CD5447D0043C36A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8ECDE67F2CD5447D0043C36A /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8E3FA98F2CD004CA00D017E5 /* iBookStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBookStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECDE67F2CD5447D0043C36A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		8E3FA9862CD004CA00D017E5 = {
 			isa = PBXGroup;
 			children = (
+				8ECDE67F2CD5447D0043C36A /* Localizable.xcstrings */,
 				8ECDE6652CD41A900043C36A /* iBookStore */,
 				8E3FA9902CD004CA00D017E5 /* Products */,
 			);
@@ -91,6 +97,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				ja,
 			);
 			mainGroup = 8E3FA9862CD004CA00D017E5;
 			minimizedProjectReferenceProxies = 1;
@@ -109,6 +117,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECDE6802CD5447D0043C36A /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +193,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -240,6 +250,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

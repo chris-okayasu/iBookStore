@@ -179,10 +179,27 @@ struct EditBookView: View {
     }
 }
 
-#Preview {
+#Preview("English") {
     let preview = Preview(Book.self)
     return NavigationStack {
         EditBookView(book: Book.sampleBooks[1])
             .modelContainer(preview.container)
     }
 }
+
+//#Preview("Japanese") {
+//    let preview = Preview(Book.self)
+//    return NavigationStack {
+//        EditBookView(book: Book.sampleBooks[1])
+//            .modelContainer(preview.container)
+//            .environment(\.locale, Locale(identifier: "ja_JP"))
+//    }
+//}
+//#Preview("Spanish") {
+//    let preview = Preview(Book.self)
+//    return NavigationStack {
+//        EditBookView(book: Book.sampleBooks[1])
+//            .modelContainer(preview.container)
+//            .environment(\.locale, Locale(identifier: "es_ES"))
+//    }
+//}

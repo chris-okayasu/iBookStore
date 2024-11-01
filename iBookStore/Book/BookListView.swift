@@ -48,7 +48,7 @@ struct BookListView: View {
     }
 }
 
-#Preview {
+#Preview("English") {
     let preview = Preview(Book.self)
     preview.addExamples(Book.sampleBooks)
     preview.addExamples(Genre.sampleGenres)
@@ -59,3 +59,24 @@ struct BookListView: View {
 }
 
 
+#Preview("Japanese") {
+    let preview = Preview(Book.self)
+    preview.addExamples(Book.sampleBooks)
+    preview.addExamples(Genre.sampleGenres)
+    return NavigationStack{
+        BookListView()
+    }
+        .modelContainer(preview.container)
+        .environment(\.locale, Locale(identifier: "ja_JP"))
+}
+
+#Preview("Spanish") {
+    let preview = Preview(Book.self)
+    preview.addExamples(Book.sampleBooks)
+    preview.addExamples(Genre.sampleGenres)
+    return NavigationStack{
+        BookListView()
+    }
+        .modelContainer(preview.container)
+        .environment(\.locale, Locale(identifier: "es_ES"))
+}
