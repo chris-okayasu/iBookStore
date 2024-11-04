@@ -4,8 +4,6 @@
 //
 //  Created by chris on 2024/10/28.
 //
-
-import Foundation
 import SwiftData
 import SwiftUI
 
@@ -29,7 +27,10 @@ class Book { // Class is used when the app starts, that is why it crushed when n
     // many to many
     @Relationship(inverse: \Genre.books)
     var genres: [Genre]?
-    
+
+    @Attribute(.externalStorage) // with this attribute switf will store the reference of the image on the db and the image in a separate folder to avoid store images as blob data
+    var bookCover: Data? // Image
+
     init( // the init is used when new book is created NOT when the app is started (recommendedBy issue and migrations)
         title: String,
         author: String,

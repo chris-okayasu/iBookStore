@@ -7,11 +7,13 @@
 
 import SwiftUI
 import SwiftData
+import PhotosUI
 
 struct BookSorter: View {
     // Get Book model and sort by title
     @Environment(\.modelContext) private var context
     @Query private var books: [Book]
+
     init(sortOrder: SortOrder, filterString: String){
         let sortDescriptions: [SortDescriptor<Book>] = switch sortOrder {
         case .title: [SortDescriptor(\.title)]
@@ -60,6 +62,20 @@ struct BookSorter: View {
                                         }
                                     }
                                 }
+                                if let bookCoverData = book.bookCover,
+                                   let uiImage = UIImage(data: bookCoverData) {
+                                    Image(uiImage: uiImage)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 75, height: 100)
+                                } else {
+                                    
+                                    Image(systemName: "photo")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 75, height: 100)
+                                        .tint(.primary)
+                                }
                             }
                         }
                     }
@@ -75,7 +91,7 @@ struct BookSorter: View {
                             }
                         }
                     }
-
+                    
                 }
                 .listStyle(.plain)
             }
