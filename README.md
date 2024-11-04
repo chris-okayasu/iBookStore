@@ -12,6 +12,6 @@
 
 ![Simulator Screenshot - iPhone 16 Pro - 2024-11-01 at 14 07 14](https://github.com/user-attachments/assets/92d7de1c-ad78-4bee-82e1-1dc3bfac342c)
 
-![Simulator Screenshot - iPhone 16 Pro - 2024-11-01 at 14 07 59](https://github.com/user-attachments/assets/a75f6c51-7907-4609-a26b-7c16e650929a)
+![Simulator Screenshot - iPhone 16 Pro - 2024-11-04 at 13 47 10](https://github.com/user-attachments/assets/dd23190c-6701-4aa9-9189-17c7f2056eff)
 
-![Simulator Screenshot - iPhone 16 Pro - 2024-11-01 at 14 09 09](https://github.com/user-attachments/assets/ab169e72-aaf1-4f98-83f9-785d34cdfc20)
+![Simulator Screenshot - iPhone 16 Pro - 2024-11-04 at 13 46 57](https://github.com/user-attachments/assets/a7b30261-e039-4297-9ae0-f80bdde00ac0)
